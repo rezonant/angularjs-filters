@@ -25,12 +25,6 @@ angular.module("ch.filters",[])
       return str;
     }
   }
-]).filter("string.html2string", [ function() {
-  return function(str){
-      if (!str) return str;
-      return $('<div/>').html(str).text();
-    }
-  }
 ]).filter("string.shorten", [ function() {
   return function(str,length){
       if (!str || !length || str.length <= length) return (str || '');
