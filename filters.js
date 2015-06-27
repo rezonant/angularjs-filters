@@ -59,7 +59,7 @@ angular.module("ch.filters",[])
     });  
   } 
  }                
-]).filter("stringReplace", [ function(){
+]).filter("replace", [ function(){
  return function(str, pattern, replacement, global){
     global = (typeof global == 'undefined' ? true : global);
     try {
@@ -90,7 +90,7 @@ angular.module("ch.filters",[])
     return arr.join(seperator || ',');   
   } 
  }                
-]).filter("reverse", [ function(){
+]).filter("arrayReverse", [ function(){
  return function(arr){
     if (!arr) return arr;
     return arr.reverse();   
