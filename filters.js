@@ -13,6 +13,12 @@ angular.module("ch.filters",[])
     }
   }
 ])
+.filter("or", [ function() {
+  return function(a, b){
+      return a? a : b;
+    }
+  }
+])
 /***  String Filters *****/
 .filter("format", [ function() {
   return function(str){
@@ -94,6 +100,12 @@ angular.module("ch.filters",[])
  return function(arr){
     if (!arr) return arr;
     return arr.reverse();   
+  } 
+ }                
+]).filter("randomItem", [ function(){
+ return function(arr){
+    if (!arr) return arr;
+    return arr[Math.floor(Math.random()*arr.length)];
   } 
  }                
 ]);
