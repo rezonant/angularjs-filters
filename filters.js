@@ -31,16 +31,6 @@ angular.module("ch.filters",[])
       return  str.substr(0, length) + (length <= 3 ? '' : '...');
     }
   }
-]).filter("string.lowercase", [ function() {
-  return function(str){
-      return (str || '').toLowerCase();
-    }
-  }
-]).filter("string.uppercase", [ function() {
-  return function(str){
-      return (str || '').toUpperCase();
-    }
-  }
 ]).filter("string.camelcase", [ function(){
  return function(str){
     return (str || '').toLowerCase().replace(/(\s.|^.)/g, function(match, group) {
