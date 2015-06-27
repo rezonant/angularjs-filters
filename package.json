@@ -3,7 +3,7 @@
   "author": "Sumit Chawla",
   "version": "0.0.1",
   "description": "AngularJs common filters",
-  "main": "index.js",
+  "main": "angularjs-filters",
   "keywords": [
     "angularjs",
     "filters",
@@ -15,7 +15,7 @@
     "url": "https://github.com/sumitchawla/angularjs-filters.git"
   },
   "devDependencies": {
-    "phantomjs" : "~1.9",
+    "phantomjs": "~1.9",
     "karma": "~0.12",
     "karma-bro": "~0.8",
     "karma-chai": "~0.1",
@@ -32,12 +32,16 @@
   "browserify-shim": {
     "angular": "global:angular"
   },
-  "main": "angularjs-filters",
   "bugs": {
     "url": "https://github.com/sumitchawla/angularjs-filters/issues"
   },
   "scripts": {
     "test": "./node_modules/karma/bin/karma start --single-run --browsers PhantomJS; ./node_modules/karma/bin/karma start karma2.conf.js --single-run --browsers PhantomJS"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.1",
+    "angular-mocks": "^1.4.1",
+    "jquery": "^2.1.4"
+  }
 }
